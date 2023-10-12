@@ -7,9 +7,11 @@ var started=false;
 var level=0;
 
 $(document).keypress(function(){
+  if( $("#level-title").text()=='Press a Key to Start' ||$("#level-title").text()=='Game Over, Press Any Key to Restart'){
   $("#level-title").text("LEVEL 1");
   nextSequence();
   started=true;
+  }
 });
 
 
